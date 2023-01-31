@@ -38,9 +38,9 @@ const Genres = ({
     fetchGenres();
      
     
-    // return () => {
-    //    setGenres({});
-    //  };
+    return () => {
+       setGenres({});
+     };
      // eslint-disable-next-line
   }, []);
 
@@ -50,7 +50,8 @@ const Genres = ({
         selectedGenres.map((genre) => (
           <Chip
             label={genre.name}
-            style={{ margin: 2 }}
+            // style={{ margin: 2 }}
+            style={{margin:4,boxShadow:"0 5px 10px black"}}
             size="small"
             color="primary"
             key={genre.id}
@@ -62,9 +63,11 @@ const Genres = ({
         genres.map((genre) => (
           <Chip
             label={genre.name}
-            style={{ margin: 2 }}
+            // style={{ margin: 2 }}
+            style={{margin:4,boxShadow:"0 5px 10px black" }}
             size="small"
             key={genre.id}
+            sx={{fontWeight: 'bold', backgroundColor:"#99ffcc"}}
             clickable
             onClick={()=>handleAdd(genre)}
           />

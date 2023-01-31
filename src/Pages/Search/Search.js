@@ -55,6 +55,7 @@ const Search = () => {
         <div style={{ display: "flex", margin: "15px 0" }}>
           <TextField
             style={{ flex: 1 }}
+            // sx={{fontWeight: 'bold', color:'white'}}
             className="searchBox"
             label="Search"
             variant="filled"
@@ -79,8 +80,8 @@ const Search = () => {
           }}
           style={{ paddingBottom: 5 }}
         >
-          <Tab label="Search Movies" style={{ width: "50%" }} />
-          <Tab label="Search tv series" style={{ width: "50%" }} />
+          <Tab label="Search Movies" style={{ width: "50%", fontWeight:"bold" }} />
+          <Tab label="Search tv series" style={{ width: "50%" ,fontWeight:"bold"}} />
         </Tabs>
       </ThemeProvider>
       <div className="trending">

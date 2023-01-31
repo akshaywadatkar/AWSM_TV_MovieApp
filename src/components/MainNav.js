@@ -27,15 +27,14 @@ export default function SimpleBottomNavigation() {
 
   return (
     <Box
-    // style={{ background: '#2E3B55' }}
-    
+      // style={{ background: '#2E3B55' }}
+  
       sx={{
-        // bgcolor: "text.primary",
-        backgroundColor:"chocolate",
         width: "100%",
         position: "fixed",
         bottom: 0,
         zIndex: "100",
+        // bgcolor:'text.primary'
         // background:"#2d313a",
       }}
     >

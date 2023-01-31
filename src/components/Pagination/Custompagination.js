@@ -18,6 +18,7 @@ const Custompagination = ({setPage ,numOfPages}) => {
   };
   return (
     <div
+    
       style={{
         width: "100%",
         display: "flex",
@@ -32,6 +33,8 @@ const Custompagination = ({setPage ,numOfPages}) => {
           hideNextButton
           hidePrevButton
           color="primary"
+          sx={{fontWeight: 'bold'}}
+          
         />
       </ThemeProvider>
     </div>
